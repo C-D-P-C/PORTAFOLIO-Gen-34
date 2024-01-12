@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CP-Proyectos</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+    />
+    <link rel="stylesheet" href="css/styles2.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <p
+        class="navbar-name"
+        id="navbarName"
+        onclick="window.location.href='index.html'"
+      >
+        Carlos Patiño
+      </p>
+      <a
+        href="index.html"
+        class="initials light-mode-logo"
+        onmouseover="showName();"
+        onmouseout="hideName();"
+      >
+        <span class="visible-text" id="initials">CP</span>
+        <span class="full-name" style="display: none">CARLOS PATIÑO</span>
+      </a>
+      <div class="navbar-toggler" onclick="toggleNav()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="navbar-right" id="navbarRight">
+        <a href="habilidades.html" class="navbar-button">Habilidades</a>
+        <a href="proyectos.html" class="navbar-button">Proyectos</a>
+        <a href="formacion.html" class="navbar-button">Formación</a>
+        <a href="servicios.html" class="navbar-button">Servicios</a>
+        <a href="contactos.html" class="navbar-button">Contactos</a>
+        <a href="referencias.html" class="navbar-button">referencias</a>
+      </div>
+    </div>
+
+    <main>
+      <div class="center-container">
+        <div class="box" id="left-box">
+          <div id="titulo-container">
+            <h1 id="titulo-grande">Mis Proyectos</h1>
+          </div>
+          <br /><br />
+          <p>
+            Esto es solo el comienzo! Estoy emocionado por lo que está por
+            venir. Pronto, estaré compartiendo más proyectos, cada uno
+            representando nuevos retos superados y aprendizajes adquiridos en mi
+            camino de crecimiento en el ámbito tecnológico. Mantente atento,
+            ¡hay muchas cosas emocionantes en desarrollo
+          </p>
+          <button id="themeButton">Cambiar a modo oscuro</button>
+        </div>
+        <div class="vertical-divider"></div>
+        <div class="box" id="right-box">
+          <div class="icon-group">
+            <a href="index.html" class="block-link">
+              <div class="icon">Proyecto 1</div>
+            </a>
+            <div class="icon">Proyecto 2</div>
+            <div class="icon">Proyecto 3</div>
+            <div class="icon">Proyecto 4</div>
+            <div class="icon">Proyecto 5</div>
+            <div class="icon">Proyecto 6</div>
+            <div class="icon">Proyecto 7</div>
+            <div class="icon">Proyecto 8</div>
+            <div class="icon">Proyecto 9</div>
+            <div class="icon">Proyecto 10</div>
+            <div class="icon">Proyecto 11</div>
+            <div class="icon">Proyecto 12</div>
+          </div>
+        </div>
+      </div>
+      <script src="js/script2.js"></script>
+    </main>
+  </body>
+</html>

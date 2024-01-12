@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CP-Carlos Patiño</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+    />
+    <link rel="stylesheet" href="https://boxicons.com/css/boxicons.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <p
+        class="navbar-name"
+        id="navbarName"
+        onclick="window.location.href='index.html'"
+      >
+        Carlos Patiño
+      </p>
+      <a
+        href="index.html"
+        class="initials light-mode-logo"
+        onmouseover="showName();"
+        onmouseout="hideName();"
+      >
+        <span class="visible-text" id="initials">CP</span>
+        <span class="full-name" style="display: none">CARLOS PATIÑO</span>
+      </a>
+      <div class="navbar-toggler" onclick="toggleNav()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="navbar-right" id="navbarRight">
+        <a href="habilidades.html" class="navbar-button">Habilidades</a>
+        <a href="proyectos.html" class="navbar-button">Proyectos</a>
+        <a href="formacion.html" class="navbar-button">Formación</a>
+        <a href="servicios.html" class="navbar-button">Servicios</a>
+        <a href="contactos.html" class="navbar-button">Contactos</a>
+        <a href="referencias.html" class="navbar-button">referencias</a>
+      </div>
+    </div>
+
+    <main>
+      <h1 style="font-size: 60px">Bienvenido a mi Portafolio</h1>
+      <br />
+      <div class="info-container">
+        <img src="foto.png" alt="Tu foto" />
+        <div class="description">
+          <br /><br />
+          <h2 id="titulo-container" style="font-size: 80px"></h2>
+          <br /><br />
+          <p>
+            Soy de Colombia, tengo 23 años de edad, estudio virtualmente
+            Ingeniería en software en la Universidad Uniminuto. Trabajo como
+            desarrollador web.<br /><br /><br />Actualmente me encuentro en
+            segundo semestre, y como programador me desempeño muy bien en
+            frontend también en backend. Me encanta hacer realidad mis ideas
+            mediante la programación y ayudar a los pequeños negocios a que
+            tomen un impulso al mundo web.
+          </p>
+          <br /><br />
+          <button id="themeButton">
+            <span class="icon-container">
+              <i class="bx bx-sun"></i>
+              <i class="bx bx-moon"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

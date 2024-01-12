@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CP-Habilidades</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+    />
+    <link rel="stylesheet" href="css/styles6.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <p
+        class="navbar-name"
+        id="navbarName"
+        onclick="window.location.href='index.html'"
+      >
+        Carlos Patiño
+      </p>
+      <a
+        href="index.html"
+        class="initials light-mode-logo"
+        onmouseover="showName();"
+        onmouseout="hideName();"
+      >
+        <span class="visible-text" id="initials">CP</span>
+        <span class="full-name" style="display: none">CARLOS PATIÑO</span>
+      </a>
+      <div class="navbar-toggler" onclick="toggleNav()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="navbar-right" id="navbarRight">
+        <a href="habilidades.html" class="navbar-button">Habilidades</a>
+        <a href="proyectos.html" class="navbar-button">Proyectos</a>
+        <a href="formacion.html" class="navbar-button">Formación</a>
+        <a href="servicios.html" class="navbar-button">Servicios</a>
+        <a href="contactos.html" class="navbar-button">Contactos</a>
+        <a href="referencias.html" class="navbar-button">Referencias</a>
+      </div>
+    </div>
+
+    <main>
+      <div class="center-container">
+        <div class="box" id="left-box">
+          <div id="titulo-container">
+            <h1 id="titulo-grande">Mis Habilidades</h1>
+          </div>
+          <br /><br />
+
+          <button id="themeButton">Cambiar a modo oscuro</button>
+
+          <h2>Añade un comentario</h2>
+          <textarea id="comment" rows="4" cols="50"></textarea>
+          <button onclick="addComment()">Enviar</button>
+
+          <h2>Comentarios:</h2>
+          <div id="comments"></div>
+        </div>
+        <div class="vertical-divider"></div>
+        <div class="box" id="right-box"></div>
+      </div>
+      <script src="js/script6.js"></script>
+    </main>
+  </body>
+</html>
